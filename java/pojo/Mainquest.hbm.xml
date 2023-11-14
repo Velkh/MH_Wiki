@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 5, 2023 4:41:41 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Mainquest" table="mainquest" catalog="mh_wiki" optimistic-lock="version">
+        <id name="mqId" type="java.lang.Integer">
+            <column name="MQ_ID" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="biome" class="pojo.Biome" fetch="select">
+            <column name="Biome_ID" not-null="true" />
+        </many-to-one>
+        <many-to-one name="largemonster" class="pojo.Largemonster" fetch="select">
+            <column name="LM_ID" not-null="true" />
+        </many-to-one>
+        <property name="mqName" type="string">
+            <column name="MQ_Name" length="50" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
