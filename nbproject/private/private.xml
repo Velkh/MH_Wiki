@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/dao/DAOMainQuest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/pojo/Carveitem.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/index.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/Management.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/pojo/Biome.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/DAOLargeMonsterUnitTest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/Login.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/dao/DAOBiome.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/dao/DAOSmallMonster.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/admin/carveitem/show.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/DAOAdminJUnitTest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/pojo/Subquest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/DAOCarveItemJUnitTest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/dao/DAOLargeMonster.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/dao/DAOSubQuest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/accessdenied.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/pojo/AdminNotFoundException.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/dao/DAOCarveItem.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/pojo/managed_bean.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/DAOSmallMonsterJUnitTest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/admin/Admin/show.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/dao/DAOAdmin.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/Quest/The%20Iceborne%20Wyvern.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/LoginTestJUnitTest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/admin/mainquest/show.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/pojo/Mainquest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/admin/Biome/show.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/DAOMainQuestJUnitTest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/admin/largemonster/update.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/DAOBiomeJUnitTest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/src/java/pojo/Admin.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/admin/mainquest/update.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/web/admin/largemonster/show.xhtml</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/DAOSubQuestJUnitTest.java</file>
+            <file>file:/C:/Users/bagus/OneDrive/Documents/NetBeansProjects/MH_Wiki/test/AdminPojoTest.java</file>
+        </group>
+    </open-files>
+</project-private>
