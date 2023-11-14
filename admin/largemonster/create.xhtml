@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:t="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+   <h:head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>CRUD</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            h1 {
+                text-align: center;
+                color: #007BFF;
+            }
+
+            h:form#input {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 400px;
+                width: 100%;
+            }
+
+            h:panelGrid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            h:panelGrid label {
+                font-weight: bold;
+            }
+
+            h:inputText {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+
+            h:commandButton {
+                background-color: #007BFF;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+
+            h:commandButton:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="Studdd">
+            <h2>Add Large Monster </h2>
+            <h:form id="input">
+                <h:panelGrid columns="2">
+                    <label class="label">Monster ID:</label>
+                    <h:inputText value="#{lm.lmId}" class="iptText"/>
+                    <label class="label">Monster Name:</label>
+                    <h:inputText value="#{lm.lmName}" class="iptText"/>
+                    <label class="label">Monster Type:</label>
+                    <h:inputText value="#{lm.lmType}" class="iptText"/>
+                    <div class="btnn">
+                        <h:commandButton value="Add Monster" action="#{lm.save()}" class="cmdbtn"/>
+                        <div class="btnn">
+                            <a href="show.xhtml" class="cmdbtn">Show Large Monster</a>
+                        </div>
+                    </div>
+                </h:panelGrid>
+            </h:form> <br></br><br></br>
+        </div>
+    </h:body>
+</html>

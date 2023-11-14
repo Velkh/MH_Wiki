@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <html lang="en">
+        <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <meta name="description" content="" />
+            <meta name="author" content="" />
+            <f:metadata>
+            <f:view beforePhase="#{login_bean.validate}">
+            </f:view>
+            </f:metadata>
+            <title>MHW Iceborne : Wiki</title>
+            <link rel="icon" type="image/x-icon" href="Assets/favicon.ico" />
+            <!-- Font Awesome icons (free version)-->
+            <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+            <!-- Google fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+            <!-- Core theme CSS (includes Bootstrap)-->
+            <link href="css/styles.css" rel="stylesheet" />
+        </head>
+        <h:body id="page-top">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+                <div class="container px-4 px-lg-5">
+                    <a class="navbar-brand" href="#page-top">Monster Hunter World : Iceborne</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#Wildlifes">Wildlifes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Biomes">Biomes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Quest">Quest</a></li>
+                            <li class="nav-itme"><a class="nav-link" href="Management.xhtml">Admin</a></li>
+                            <div class="nav-item"><h:form styleClass="nav-item"><h:commandLink action="#{login_bean.logout}" ><h:outputText value="LOG OUT" styleClass="nav-link px-lg-3 py-3 py-lg-4" style="color: white; font-size: 14px; margin-botttom:10px; font-family: 'Open Sans', sans-serif; font-weight: semi-bold " /></h:commandLink></h:form>
+                    </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Masthead-->
+            <header class="masthead">
+                <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                    <div class="d-flex justify-content-center">
+                        <div class="text-center">
+                            <h1 class="mx-auto my-0 text-uppercase">MHW Iceborne : Wiki</h1>
+                            <h2 class="text-white-50 mx-auto mt-2 mb-5">A Guide for Monster Hunter World : Iceborne</h2>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="about-section text-center" id="Wildlifes">
+
+                <!-- Rathalos -->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/rath.png" alt="..." />
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-right">
+                            <h4><h:form>
+                                <h:commandLink action="#{navigationBean.navigateToRathalos}">
+                                    Rathalos
+                                </h:commandLink></h:form></h4>
+                                
+                                <p class="mb-0 text-white-50">
+                                    Terrible wyverns called "Kings of the Skies". Along with Rathians, they stake wide territories centered around their nests. 
+                                    Rathalos descend on invaders from the sky, attacking with poison claws and breath of fire.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rathian -->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/rathi.png" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="featured-text text-center text-lg-right">
+                            
+                            <h4> <h:form>
+                                <h:commandLink action="#{navigationBean.navigateToRathian}">
+                                    Rathian
+                                </h:commandLink></h:form></h4>
+                            <p class="mb-01 text-white-50">Fire-breathing female wyverns, also known as the "Queens of the Land". 
+                                With poison-secreting tails, they hunt mainly on the ground.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Nargacuga -->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/cuga.png" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-right">
+                             <h4> <h:form>
+                                <h:commandLink action="#{navigationBean.navigateToNargacuga}">
+                                    Nargacuga
+                                </h:commandLink></h:form></h4>
+                            <p class="mb-0 text-white-50">Flying Wyverns, it has black scales, black fur and nightmarish red eyes, giving it the look and style of a predatory black panther. 
+                                Its dark, feral appearance.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tigrex -->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/rawr.png" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="featured-text text-center text-lg-right">
+                              <h4> <h:form>
+                                <h:commandLink action="#{navigationBean.navigateToTigrex}">
+                                    Tigrex
+                                </h:commandLink></h:form></h4>
+                            <p class="mb-01 text-white-50">A Flying Wyvern whose primitive origins are obvious. It displays incredible ferocity with its claws, jaws, and developed limbs. 
+                                Be wary of its thunderous roar!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Savage Deviljho -->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/svg.png" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-right">
+                               <h4> <h:form>
+                                <h:commandLink action="#{navigationBean.navigateToSavageDeviljho}">
+                                   Savage Deviljho
+                                </h:commandLink></h:form></h4>
+                            <p class="mb-0 text-white-50">A mutated Deviljho variant, driven mad by its overpowering hunger. 
+                                It will attempt to feed on all it sees.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Velkhana -->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/Vel.png" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="featured-text text-center text-lg-right">
+                          <h4> <h:form>
+                                <h:commandLink action="#{navigationBean.navigateToVelkhana}">
+                                   Velkhana
+                                </h:commandLink></h:form></h4>
+                            <p class="mb-01 text-white-50">An elder dragon said to freeze all in its path. 
+                                According to legend, it can control the cold, and use its freezing breath to conjure massive spires of ice out of nowhere.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Raging Brachydios -->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/MikeTyson.png" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-right">
+                           <h4> <h:form>
+                                <h:commandLink action="#{navigationBean.navigateToRagingBrachydios}">
+                                   Raging Brachydios
+                                </h:commandLink></h:form></h4>
+                            <p class="mb-0 text-white-50">A Brachydios variant that is much larger than the normal species. The slime on its body will activate over time and detonate.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alatreon-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/alatreon_icon.png" alt="..." /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="featured-text text-center text-lg-right">
+                             <h4> <h:form>
+                                <h:commandLink action="#{navigationBean.navigateToAlatreon}">
+                                   Alatreon
+                                </h:commandLink></h:form></h4>
+                            <p class="mb-01 text-white-50">Known as a symbol of destruction, people fear even uttering its name. 
+                                It’s rumoured to control all of the elements, but most, if not all, records of its existence have been burned.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fatalis-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid mb-3 mb-lg-0" src="Assets/LM/Black.png" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-right">
+                             <h4> <h:form>
+                                <h:commandLink action="#{navigationBean.navigateToFatalis}">
+                                   Fatalis
+                                </h:commandLink></h:form></h4>
+                            <p class="mb-0 text-white-50">A legendary black dragon known only as Fatalis. 
+                                Rumored to have destroyed a kingdom in a single night, and has taken its castle for a roost.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Ancient Forest-->
+            <section class="projects-section bg-light" id="Biomes">
+
+                <div class="container px-4 px-lg-5"> 
+                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/maxresdefault.jpg" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <div class="bg-brown text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                                        <h04 class="text-white">Ancient Forest</h04>
+                                        <p class="mb-0 text-white-50">Ancient Forest is a brand new location that has been shown in early gameplay videos. 
+                                            It is a lush and leafy setting full of monsters and resources to harvest. A vast forest that supports a complex ecosystem. 
+                                            A network of trees stretch high into the sky, creating the ancient tree that looms tall over the rest of the forest.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wildspire Waste-->
+                    <div class="row gx-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/wildspire_2.png" alt="..." /></div>
+                        <div class="col-lg-6 order-lg-first">
+                            <div class="bg-black text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                        <h04 class="text-white">Wildspire Waste </h04>
+                                        <p class="mb-0 text-white-50">Wildspire Waste is a large desert featuring dunes and unexpected swamps, with poor vegetation and rare monsters that can withstand the harsh conditions of life in the Wastes. 
+                                            A massive strip of parched land conjoined with a swampland that takes in water from the Ancient Forest. Ant colonies have built massive spires within the desert, while varied vegetation has sprung up along many watering holes. 
+                                            This locale is now home to creatures that take advantage of the two unique, coexisting ecosystems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Coral Highlands-->
+                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/coral_highlands.png" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <div class="bg-brown text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                                        <h04 class="text-white">Coral Highlands</h04>
+                                        <p class="mb-0 text-white-50">Coral Highlands is a brand new location that has been shown in early gameplay videos. 
+                                            A mysterious ecological highland that mimics the ebb and flow of the ocean itself. Eggs from the corals ride upon the rising currents and spread to the rest of the New World, where they become a part of the natural food chain. 
+                                            The area is a colorful and vibrant dry coral reef site, with high peaks and cannyons as well as mysterious caves.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rotten Vale-->
+                    <div class="row gx-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/rotten_vale_3.png" alt="..." /></div>
+                        <div class="col-lg-6 order-lg-first">
+                            <div class="bg-black text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                        <h04 class="text-white">Rotten Vale</h04>
+                                        <p class="mb-0 text-white-50">Rotten Vale is a poisonous and hazardous area of The New World. Bones and corpses pile up, generating toxic fumes that are extremely harmful to Hunters and render even docile Monsters aggressive, and an entire ecosystem revolving around decomposition. 
+                                            Venture into the depths of the Rotten Vale in your journey to unravel the mysteries of the Elder Crossing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Elder's Recess-->
+                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/elder_recess.png" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <div class="bg-brown text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                                        <h04 class="text-white">Elder Recess</h04>
+                                        <p class="mb-0 text-white-50">It is a volcanic environment covered in the crystallized bioenergy of Elder Dragons.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hoarfrost Reach-->
+                    <div class="row gx-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/hoarfrost.jpg" alt="..." /></div>
+                        <div class="col-lg-6 order-lg-first">
+                            <div class="bg-black text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                        <h04 class="text-white">Hoarfrost Reach</h04>
+                                        <p class="mb-0 text-white-50">The Hoarfrost Reach is a cold, inhospitable area.
+                                            This snow-covered region may look too hostile to survive in, but it's teeming with unique endemic life.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Guiding Lands-->
+                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/Guiding.jpg" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <div class="bg-brown text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                                        <h04 class="text-white">Guiding Lands</h04>
+                                        <p class="mb-0 text-white-50">The Guiding Landsis a mysterious area, this area, a mishmash of features from the Ancient Forest, Wildspire Waste, Coral Highlands, Rotten Vale, Elder's Recess, and Hoarfrost Reach, is where powerful monsters gather together. 
+                                            Like Moga Woods and the Everwood, it serves as an area to freely hunt randomly-appearing monsters and obtain unique items.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Secluded Valley-->
+                    <div class="row gx-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/Secluded.jpg" alt="..." /></div>
+                        <div class="col-lg-6 order-lg-first">
+                            <div class="bg-black text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                        <h04 class="text-white">Secluded Valley</h04>
+                                        <p class="mb-0 text-white-50">Secluded Valley was once used by a juvenile xenojiva who turn into a fully grow safi'jiva.
+                                            after safi'jiva has been hunted down. it is down a home for an elder dragon called Alatreo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Castle Schrade-->
+                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                        <div class="col-lg-6"><img class="img-fluid" src="Assets/img/Castle.jpg" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <div class="bg-brown text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-left">
+                                        <h04 class="text-white">Castle Schrade</h04>
+                                        <p class="mb-0 text-white-50">Castle Schrade
+                                            It is an abandoned castle that was built long ago, but is now in ruins, a shadow of its former glory. 
+                                            The area features blood red skies that have dark hues, and swirls of purple clouds.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quest-->
+            <section class="contact-section bg-black" id="Quest">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5">
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href="Quest/Swoop to a New Low.xhtml">Swoop to a New Low</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50">Hunt a Rathalos</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href='Quest/Royal Relocation.xhtml'>Royal Relocation</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50"><a href="#!">Hunt a Rathian</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href='Quest/The Black Wind.xhtml'>The Black Wind</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50">Hunt a Nargacuga</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href='Quest/Absolute Power.xhtml'>Absolute Power</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50">Hunt a Tigrex</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href='Quest/A Reason Behind The Hunger.xhtml'>A Reason Behind the Hunger</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50">Hunt a Savage Deviljho</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href="Quest/The Iceborne Wyvern.xhtml">The Iceborne Wyvern</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50">Hunt The Iceborne Wyvern : Velkhana</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href='Quest/And My Rage For All.xhtml'>...and My Rage for All</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50">Hunt the Raging Brachydios</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href='Quest/Dawn of the Death Star.xhtml'>Dawn of The Death Star</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50">Hunt The Mark of Destruction : Alatreon</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 mb-md-0">
+                            <div class="card py-4 h-100">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-envelope-alt text-primary mb-2"></i>
+                                    <h7 class="text-uppercase m-0"><a href='Quest/Fade to Black.xhtml'>Fade to Black</a></h7>
+                                    <hr class="my-4 mx-auto" />
+                                    <div class="small text-black-50">Hunt The History itself : Fatalis</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Footer-->
+            <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2023</div></footer>
+            <!-- Bootstrap core JS-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Core theme JS-->
+            <script src="js/scripts.js"></script>
+            <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+            <!-- * *                               SB Forms JS                               * *-->
+            <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+            <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        </h:body>
+    </html>
+</html>

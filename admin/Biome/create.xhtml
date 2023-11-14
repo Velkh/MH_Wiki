@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Add Biome</title>
+        <link rel="stylesheet" type="text/css" href="css/Student.css"/>
+        <style>
+            body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+            }
+            .Studdd {
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin: 20px auto;
+                max-width: 400px;
+                text-align: center;
+            }
+            h2 {
+                color: #007bff;
+                font-size: 24px;
+            }
+            .label {
+                font-weight: bold;
+            }
+            .iptText {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+            .btnn {
+                text-align: center;
+            }
+            .cmdbtn {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="Studdd">
+            <h2>Add Biome </h2>
+            <h:form id="input">
+                <h:panelGrid columns="2">
+                    <label class="label">Biome ID:</label>
+                    <h:inputText value="#{guh.biomeId}" class="iptText"/>
+                    <label class="label">Biome Name:</label>
+                    <h:inputText value="#{guh.biomeName}" class="iptText"/>
+                    <label class="label">Biome Description:</label>
+                    <h:inputText value="#{guh.biomeDesc}" class="iptText"/>
+                    <div class="btnn">
+                        <h:commandButton value="Add Biome" action="#{guh.save()}" class="cmdbtn"/>
+                        <div class="btnn">
+                            <a href="show.xhtml" class="cmdbtn">Show Biome</a>
+                        </div>
+
+                    </div>
+                </h:panelGrid>
+            </h:form> <br></br><br></br>
+        </div>
+    </h:body>
+</html>

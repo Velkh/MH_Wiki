@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta charset="UTF-8" />
+        <title>MH:Wiki</title>
+        <link rel="stylesheet" type="text/css" href="css/Login.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </h:head>
+    <h:body>
+        <div class="container">
+            <input type="checkbox" id="flip" />
+            <div class="cover">
+                <div class="front">
+                    <img src="Assets/img/Seliana.jpg" alt="" />
+                    <div class="text">
+                        <span class="text-1">Welcome to <br />Monster Hunter Wiki</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="text">
+                        <span class="text-1">Embark on a Journey<br /> Hunting Monsters</span>
+                        <span class="text-2">Quest Start</span>
+                    </div>
+                </div>
+            </div>
+            <div class="forms">
+                <div class="form-content">
+                    <div class="login-form">
+                        <div class="title">Login</div>
+                        <h:form onsubmit="return validateForm();">
+                            <div class="input-boxes">
+                                <div class="input-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <h:inputText id="username" value="#{login_bean.username}" required="true" />
+                                    <h:message for="username" style="color: red;" />
+                                </div>  
+                                <div class="input-box">
+                                    <i class="fas fa-lock"></i>
+                                    <h:inputSecret id="password" value="#{login_bean.password}" required="true" />
+                                    <h:message for="password" style="color: red;" />
+                                </div>
+                               <div class="button input-box">
+                                   <h:commandButton value="Login" action="#{login_bean.checkuser()}" />
+                               </div>
+                            </div>
+                        </h:form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function validateForm() {
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+
+                if (username.trim() === "" || password.trim() === "") {
+                    alert("Please fill in both username and password.");
+                    return false;
+                }
+
+                return true;
+            }
+        </script>
+    </h:body>
+</html>

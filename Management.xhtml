@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+    <h:head>
+        <f:metadata>
+            <f:view beforePhase="#{login_bean.validate}">
+            </f:view>
+        </f:metadata>
+        <title>Management Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5TcLrRJbozZ+QajlCj+alVm+edRKB79gUZtmAwNVkE263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f0f0f0;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-start;
+            }
+
+            .section {
+                max-width: 800px;
+                margin: 20px;
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ccc;
+            }
+
+            .table th, .table td {
+                border: 1px solid #ccc;
+                padding: 12px;
+                text-align: left;
+            }
+
+            .column {
+                background-color: #007bff;
+                color: #fff;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .delete {
+                background-color: #ff4d4d;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 8px 16px;
+                cursor: pointer;
+            }
+
+            .delete:hover {
+                background-color: #ff3333;
+            }
+
+            .button-container {
+                text-align: center;
+            }
+
+            .create-button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                text-decoration: none;
+                cursor: pointer;
+                display: inline-block;
+            }
+
+            .create-button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+    </h:head>
+
+    <h:body>
+        <div class="section">
+            <h1>Biome Management</h1>
+            <h:form>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="column">Biome ID</th>
+                            <th class="column">Biome Name</th>
+                            <th class="column">Biome Description</th>
+                            <th class="column">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <ui:repeat value="#{guh.allRecords}" var="s">
+                            <tr>
+                                <td>#{s.biomeId}</td>
+                                <td>#{s.biomeName}</td>
+                                <td>#{s.biomeDesc}</td>
+                                <td>
+                                    <h:commandButton value="Delete" action="#{guh.delete(s.biomeId)}" class="delete" onclick="return confirm('Are you sure you want to delete this data')" />
+                                </td>
+                            </tr>
+                        </ui:repeat>
+                    </tbody>
+                </table>
+            </h:form>
+            <div class="button-container">
+                <a href="admin/Biome/create.xhtml" class="create-button">Create New Biome</a>
+            </div>
+            <br></br>
+            <div class="button-container">
+                <a href="admin/Biome/update.xhtml" class="create-button">Update Biome</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h1>Large Monster Management</h1>
+            <h:form>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="column">Monster ID</th>
+                            <th class="column">Monster Name</th>
+                            <th class="column">Monster Type</th>
+                            <th class="column">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <ui:repeat value="#{lm.allRecords}" var="s">
+                            <tr>
+                                <td>#{s.lmId}</td>
+                                <td>#{s.lmName}</td>
+                                <td>#{s.lmType}</td>
+                                <td>
+                                    <h:commandButton value="Delete" action="#{lm.delete(s.lmId)}" class="delete" />
+                                </td>
+                            </tr>
+                        </ui:repeat>
+                    </tbody>
+                </table>
+            </h:form>
+            <div class="button-container">
+                <a href="admin/largemonster/create.xhtml" class="create-button">Create Large Monster</a>
+            </div>
+            <br></br>
+            <div class="button-container">
+                <a href="admin/largemonster/update.xhtml" class="create-button">Update Large Monster</a>
+            </div>
+        </div>
+    </h:body>
+</html>
+

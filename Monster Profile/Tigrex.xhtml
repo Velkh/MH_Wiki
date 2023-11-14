@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Tigrex Profile</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/LM.css" rel="stylesheet" />
+    </h:head>
+    <h:body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html">Wildlifes</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                        <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
+                        <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
+                    </ul>
+                    <div>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
+                                <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="bg-dark py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Tigrex</h1>
+                                <p class="lead fw-normal text-white-50 mb-4">A Flying Wyvern whose primitive origins are obvious. It displays incredible ferocity with its claws, jaws, and developed limbs. 
+                                    Be wary of its thunderous roar!</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="../Assets/info/tigrex.png" alt="..." /></div>
+                    </div>
+                </div>
+            </header>
+            <!-- Features section-->
+            <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="../Assets/Break/tigrex.png" alt="..." /></div>
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                            <h2 class="h5">Details</h2>
+                            <p class="mb-0">Found in: All Biomes
+                                <br></br>
+                                Target of Quests: Absolute Power, The Purr-fect Room : Stone.
+                                <br></br>
+                                Is immediately hostile at close range.
+                                <br></br>
+                                Attacks other monsters: Yes.
+                                <br></br>
+                                Species: Flying Wyverns</p>
+                        </div>
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                            <h2 class="h5">Combat Info</h2>
+                            <p class="mb-0">Enraged mode: Eyes and forefeet glow red. Will jump back, and then roar.
+                                <br></br>
+                                The roar it uses that shows it entering enraged mode deals damage and pushes back, but has less range than a classic roar.
+                                <br></br>
+                                Weaknesses: Dragon and Thundr.
+                                <br></br>
+                                Modestly susceptible to sleep, paralysis and stun.</p>
+                        </div>
+                    </div>
+                </div>
+                  <h:form>
+                 <p class="mb-0">Tigrex Carve Items</p>
+                            <h:dataTable border="1" value="#{ci.getCarveitemByMonsterId(4)}" var="s" cellspacing="0" class="table">
+                                <h:column>
+                                    <f:facet name="header" class="column">Item ID</f:facet>
+                                    #{s.ciId}
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header" class="column">Monster Name</f:facet>
+                                    #{s.largemonster.lmName}
+                                </h:column>
+                                <h:column>
+                                    <f:facet name="header" class="column">Item Name</f:facet>
+                                    #{s.itemName}
+                                </h:column>
+                            </h:dataTable>
+                        </h:form>
+            </section>
+        </main>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </h:body>
+</html>
+
